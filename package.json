@@ -1,6 +1,6 @@
 {
   "name": "callsign-uid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A NodeJS package that generates easily memorizable unqiue ids.",
   "main": "index.js",
   "scripts": {
