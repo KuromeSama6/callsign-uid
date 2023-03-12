@@ -6,7 +6,8 @@ A NodeJS package that generates easily memorizable unqiue ids.
 To create a random CUID:
 ```js
 const Cuid = require("callsign-uid");
-var myCuid = new Cuid().text;
+var myCuid = Cuid.Random();
+var text = myCuild.text;
 ```
 
 To convert from Denary to CUID:
