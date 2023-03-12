@@ -19,7 +19,7 @@ console.log(myCuid.text); //ALJET959L (lower case)
 
 ---
 ## How it works
-CUID generates a uid has the format of `[Pronounceable 5-letter word][3 digits][1 single letter]`. Combined, this algorithm yields around 1,142,400,000 (1 billion) unique ids. Multiple CUIDs can be combined to yield more unique ids.
+CUID generates a uid has the format of `[Pronounceable 5-letter word][3 digits][1 single letter]`. Combined, this algorithm yields 25,000,000,000 (25 billion) unique ids for a single CUID. Multiple CUIDs can be combined to yield more unique ids.
 
 We will focus on the generation of the pronounceable 5-letter word. The 3 digits and 1 letter are simple randomly chosen from a character set. In the following explanation, the letter `V` will be used to represent a **Vowel**, and the letter `C` will represent a **Consonant**. The letter `Y` does not count as a vowel, nor a consonant. It is only used for special purposes..
 

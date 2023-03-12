@@ -3,6 +3,7 @@ const chrSet = "abcdefghijklmnopqrstuvwxz"
 const consonants = "bcdfghjklmnpqrstvwxz";
 const digits = "0123456789";
 const uidLength = 5;
+const sizeLimit = Math.pow(chrSet.length, 2) * Math.pow(consonants.length, 3) * vowels.length * 1000;
 
 class Cuid {
     fix = "*****"; // Five readables
@@ -21,7 +22,7 @@ class Cuid {
     }
 
     static FromDenary(num){
-        if (num >= Math.pow(chrSet.length, 2) * Math.pow(consonants.length, 3) * vowels.length * 1000) throw new CUIDOverflowException(`CUID Overflowed ${num} >= 25000000000`);
+        if (num >= sizeLimit) throw new CUIDOverflowException(`CUID Overflowed: ${num} >= ${sizeLimit}`);
         
         const alphabetLength = chrSet.length;
         const vowelLength = vowels.length;
