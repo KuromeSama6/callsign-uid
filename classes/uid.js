@@ -15,7 +15,7 @@ class Cuid {
     }
 
     get id(){
-        return this.id.toString().padStart(3, "0");
+        return this.idNum.toString().padStart(3, "0");
     }
 
     static Random(){
