@@ -1,0 +1,22 @@
+{
+  "name": "callsign-uid",
+  "version": "1.0.0",
+  "description": "A NodeJS package that generates easily memorizable unqiue ids.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KuromeSama6/callsign-uid.git"
+  },
+  "keywords": [
+    "uid"
+  ],
+  "author": "KuromeSama6",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KuromeSama6/callsign-uid/issues"
+  },
+  "homepage": "https://github.com/KuromeSama6/callsign-uid#readme"
+}
