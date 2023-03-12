@@ -8,17 +8,22 @@ const sizeLimit = Math.pow(chrSet.length, 2) * Math.pow(consonants.length, 3) * 
 class Cuid {
     fix = "*****"; // Five readables
     idNum = NaN;
-    id = "***"; // Three digits
     sector = "*"; // Last sector
 
     get text(){
         return `${this.fix}${this.id}${this.sector}`;
     }
 
+    get id(){
+        return this.id.toString().padStart(3, "0");
+    }
+
     static Random(){
         const ret = new Cuid();
-        console.log(generatePronounceableWord());
-
+        ret.fix = generatePronounceableWord();
+        ret.idNum = Math.floor(Math.random() * 1000);
+        ret.sector = chrSet.randomSample();
+        return ret
     }
 
     static FromDenary(num){
@@ -33,7 +38,6 @@ class Cuid {
         ret.sector = (num % alphabetLength).toChr();
 
         ret.idNum = Math.floor(num / alphabetLength) % 1000;
-        ret.id = (ret.idNum).toString().padStart(3, "0");
 
         const fix = ["*", "*", "*", "*", "*"];
         fix[4] = Math.floor(num / 25000).toChr(consonants);
