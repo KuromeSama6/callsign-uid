@@ -6,6 +6,8 @@ const uidLength = 5;
 const sizeLimit = Math.pow(chrSet.length, 2) * Math.pow(consonants.length, 3) * vowels.length * 1000;
 
 class Cuid {
+    static REGEX = /^[a-zA-Z]{3}[a,e,i,o,u,A,E,I,O,U][a-zA-Z][0-9]{3}[a-zA-Z]$/;
+
     fix = "*****"; // Five readables
     idNum = NaN;
     sector = "*"; // Last sector
