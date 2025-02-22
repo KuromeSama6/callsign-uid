@@ -60,7 +60,3 @@ Some rules regarding counting:
 - For any consonants, `B` is the lowest data level, `Z` is the highest.
 
 According to these rules, the denary number `0` would translate to `ABCAB000A` in CUID. The denary number `1` would translate to `ABCAB000B`.
-
----
-## Flaws
-It is important to know that an algorithm that generates a pronounceable word is prone to generating innapropriate or vulgar words. While there is an filter for vulgar words, it is not fool-proof.
